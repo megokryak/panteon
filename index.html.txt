@@ -5,6 +5,68 @@
     <title>Panteon</title>
   </head>
   <body>
+      <header class="page-main">
+        <div class="page-main__wrapper">
+          <a href="#" class="page-main__logo logo">
+            <span class="logo__image"></span><span class="logo__title">panteon</span><span class="logo__desc">project</span>
+          </a>
+          <nav class="main-nav main-nav--closed">
+          </nav>
+        </div>
+        <h1 class="page-main__title">
+        </h1>
+        <img src="#" class="page-main__video-image">
+        <span class="page-main__info"></span>
+        <div class="page-main__button icon-button">
+          <img src="#" class="icon-button__image">
+        </div>
+      </header>
+      <div class="remeber">
+        <div class="remeber__info">
 
+        </div>
+        <h2 class="remeber__main-title">
+
+        </h2>
+        <h3 class="remeber__erticle-title">
+
+        </h3>
+        <p class="remeber__desc">
+        </p>
+        <h3 class="remeber__erticle-title">
+
+        </h3>
+        <p class="remeber__desc">
+        </p>
+        <img src="#" class="remeber__img">
+      </div>
+      <div class="idea">
+        <h2 class="idea__main-title">
+
+        </h2>
+        <h3 class="idea__title">
+
+        </h3>
+        <p class="idea__desc">
+        </p>
+        <img src="#" class="idea__img">
+        <blockquote class="idea__quote">
+        </blockquote>
+        <p class="idea__desc">
+        </p>
+      </div>
+      |<div class="price">
+        <img src="#" class="price__img">
+        <h2 class="price__title">
+        </h2>
+        <p class="price__desc">
+
+        </p>
+        <b class="price__value"></b>
+        <b class="price__result"></b>
+        <div class="price__button button">
+
+        </div>
+      </div>
   </body>
 </html>

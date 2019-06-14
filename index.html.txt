@@ -68,5 +68,97 @@
 
         </div>
       </div>
+      <div class="minus">
+        <h2 class="minus__title">
+
+        </h2>
+        <div class="minus__video">
+          <img src="#" class="minus__icon-start">
+        </div>
+        <p class="minus__desc-title">
+        </p>
+        <p class="minus__desc">
+        </p>
+        <ul class="minus__questions questions">
+          <li class="questions__item">
+          </li>
+          <li class="questions__item">
+          </li>
+          <li class="questions__item">
+          </li>
+        </ul>
+      </div>
+      <div class="organisation">
+        <h2 class="organisation__title">
+        </h2>
+        <ul class="organisation__items live">
+          <li class="live__item">
+            <img src="#" class="live__img">
+            <p class="live__title">
+            </p>
+            <p class="live__desc">
+            </p>
+          </li>
+          <li class="live__item">
+            <img src="#" class="live__img">
+            <p class="live__title">
+            </p>
+            <p class="live__desc">
+            </p>
+          </li>
+          <li class="live__item">
+            <img src="#" class="live__img">
+            <p class="live__title">
+            </p>
+            <p class="live__desc">
+            </p>
+          </li>
+          <li class="live__item">
+            <img src="#" class="live__img">
+            <p class="live__title">
+            </p>
+            <p class="live__desc">
+            </p>
+          </li>
+          <li class="live__item">
+            <img src="#" class="live__img">
+            <p class="live__title">
+            </p>
+            <p class="live__desc">
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="start">
+        <h2 class="start__title">
+        </h2>
+        <p class="start__desc">
+        </p>
+        <a href="#" class="start__link">
+        </a>
+      </div>
+      <div class="subscription">
+        <p class="subscription__title">
+        </p>
+        <form action="#" class="subscription__form form-send">
+          <input type="text" name="name" class="form-send__input">
+          <input type="email" name="email" class="form-send__email">
+          <input type="button" value="Подписаться" class="form-send__submit">
+        </form>
+        </form>
+      </div>
+      <footer class="footer">
+        <div class="footer-social social">
+          <span class="social__vk">vk</span>
+          <span class="social__twitter">tw</span>
+          <span class="social__facebook">fb</span>
+          <span class="social__youtebe">yt</span>
+        </div>
+        <a href="#" class="footer__link">
+        </a>
+        <a href="#" class="footer__logo logo">
+            <span class="logo__image"></span><span class="logo__title">panteon</span><span class="logo__desc">project</span>
+          </a>
+      </footer>
   </body>
 </html>

@@ -1,54 +1,57 @@
-// Gruntfile.js
+"use strict";
 
-// Вся конфигурация находится внутри этой функции
 module.exports = function(grunt) {
+  grunt.loadNpmTasks("grunt-contrib-less");
+  grunt.loadNpmTasks("grunt-browser-sync");
+  grunt.loadNpmTasks("grunt-contrib-watch");
+  grunt.loadNpmTasks("grunt-postcss");
 
-  // ===========================================================================
-  // Конфигурация GRUNT ===========================================================
-  // ===========================================================================
-
-  // ===========================================================================
-  // Загружаем модули GRUNT ========================================================
-  // ===========================================================================
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-browser-sync');
   grunt.initConfig({
+    less: {
+      style: {
+        files: {
+          "source/css/style.css": "source/less/style.less"
+        }
+      }
+    },
 
-   //Здесь будут указаны модули и их настройки
-   less: {
-    style: {
-      files: {
-        "source/css/style.css": "source/less/style.less"
+    postcss: {
+      style: {
+        options: {
+          processors: [
+            require("autoprefixer")()
+          ]
+        },
+        src: "source/css/*.css"
+      }
+    },
+
+    browserSync: {
+      server: {
+        bsFiles: {
+          src: [
+            "source/*.html",
+            "source/css/*.css"
+          ]
+        },
+        options: {
+          server: "source/",
+          watchTask: true,
+          notify: false,
+          open: true,
+          cors: true,
+          ui: false
+        }
+      }
+    },
+
+    watch: {
+      style: {
+        files: ["source/less/**/*.less"],
+        tasks: ["less", "postcss"]
       }
     }
-   },
-   postcss: {
-    style: {
-      options: {
-        processors: [
-          require("autoprefixer")()
-        ]
-      },
-      src: "source/css/*.css"
-    }
-   },
-   watch: {
-    style: {
-      files: ["source/less/**/*.less"],
-      tasks: ["less", "postcss"]
-    }
-   },
-   browserSync: {
-    server: {
-      bsFiles: {
-        src: ["source/*.html", "source/css/*.css"]
-      },
-      options: {
-        server: "sorce/"
-      }
-    }
-   }
   });
+
+  grunt.registerTask("serve", ["browserSync", "watch"]);
 };
